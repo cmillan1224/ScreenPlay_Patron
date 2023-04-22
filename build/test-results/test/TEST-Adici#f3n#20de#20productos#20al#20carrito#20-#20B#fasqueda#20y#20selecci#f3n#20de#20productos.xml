@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Adición de productos al carrito - Búsqueda y selección de productos" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-04-21T22:17:13" hostname="MPC-KPB0" time="0.824">
+  <properties/>
+  <testcase name="Buscar y agregar un producto al carrito" classname="Adición de productos al carrito - Búsqueda y selección de productos" time="0.824">
+    <failure message="io.cucumber.junit.UndefinedStepException: The step 'que estoy en la página &quot;http://automationpractice.pl/index.php&quot;' and 3 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;que estoy en la página {string}&quot;)&#10;public void queEstoyEnLaPágina(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;busco el producto {string}&quot;)&#10;public void buscoElProducto(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;hago clic en el botón {string}&quot;)&#10;public void hagoClicEnElBotón(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;debería ver un mensaje de confirmación que indica que el producto se agregó correctamente al carrito&quot;)&#10;public void deberíaVerUnMensajeDeConfirmaciónQueIndicaQueElProductoSeAgregóCorrectamenteAlCarrito() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'que estoy en la página &quot;http://automationpractice.pl/index.php&quot;' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;que estoy en la página {string}&quot;)
+public void queEstoyEnLaPágina(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;busco el producto {string}&quot;)
+public void buscoElProducto(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;hago clic en el botón {string}&quot;)
+public void hagoClicEnElBotón(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;debería ver un mensaje de confirmación que indica que el producto se agregó correctamente al carrito&quot;)
+public void deberíaVerUnMensajeDeConfirmaciónQueIndicaQueElProductoSeAgregóCorrectamenteAlCarrito() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
