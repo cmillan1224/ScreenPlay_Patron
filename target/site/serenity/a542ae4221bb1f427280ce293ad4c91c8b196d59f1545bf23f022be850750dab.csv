@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Adición de productos al carrito - Búsqueda y selección de productos","Buscar y agregar un producto al carrito","SUCCESS","2023-04-22T12:03:42.3100496-05:00[America/Bogota]","0.0","18.66"
+"Adición de productos al carrito - Búsqueda y selección de productos","Buscar y agregar un producto al carrito desde la vista rapida","SUCCESS","2023-04-26T21:36:17.6356189-05:00[America/Bogota]","0.0","19.53"
+"Adición de productos al carrito - Búsqueda y selección de productos","Buscar y agregar múltiples productos al carrito desde la vista rapida","SUCCESS","2023-04-26T21:36:38.1003891-05:00[America/Bogota]","0.0","10.26"
+"Adición de productos al carrito - Búsqueda y selección de productos","Agregar un producto al carrito seleccionando la cantidad desde la vista del producto","SUCCESS","2023-04-26T21:36:48.6316883-05:00[America/Bogota]","0.0","7.17"
+"Adición de productos al carrito - Búsqueda y selección de productos","Agregar un producto al carrito seleccionando la talla desde la vista del producto","SUCCESS","2023-04-26T21:36:55.8303944-05:00[America/Bogota]","0.0","7.43"
+"Adición de productos al carrito - Búsqueda y selección de productos","Agregar un producto al carrito seleccionando el color desde la vista del producto","SUCCESS","2023-04-26T21:37:03.5120635-05:00[America/Bogota]","0.0","6.76"

@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Adición de productos al carrito - Búsqueda y selección de productos","Buscar y agregar múltiples productos al carrito","FAILURE","2023-04-22T12:10:46.9866535-05:00[America/Bogota]","0.0","20.27"
+"Adición de productos al carrito - Búsqueda y selección de productos","Agregar un producto al carrito eliminarlo del carrito y volverlo anadir","FAILURE","2023-04-26T21:37:10.4655685-05:00[America/Bogota]","0.0","24.74"

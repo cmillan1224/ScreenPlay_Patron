@@ -1,0 +1,788 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en-us" class=""&gt;<br/>
+ &lt;head&gt; <br/>
+  &lt;meta charset="utf-8"&gt; <br/>
+  &lt;title&gt;Search - My Store&lt;/title&gt; <br/>
+  &lt;meta name="generator" content="PrestaShop"&gt; <br/>
+  &lt;meta name="robots" content="index,follow"&gt; <br/>
+  &lt;meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0"&gt; <br/>
+  &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt; <br/>
+  &lt;link rel="icon" type="image/vnd.microsoft.icon" href="/img/favicon.ico?1324977642"&gt; <br/>
+  &lt;link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico?1324977642"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/global.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/autoload/highdpi.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/autoload/responsive-tables.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/autoload/uniform.default.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/js/jquery/plugins/fancybox/jquery.fancybox.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/product_list.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockbanner/blockbanner.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockbestsellers/blockbestsellers.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockcart/blockcart.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/js/jquery/plugins/bxslider/jquery.bxslider.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockcategories/blockcategories.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockcurrencies/blockcurrencies.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blocklanguages/blocklanguages.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockcontact/blockcontact.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockmyaccountfooter/blockmyaccount.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blocknewproducts/blocknewproducts.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blocknewsletter/blocknewsletter.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blocksearch/blocksearch.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/js/jquery/plugins/autocomplete/jquery.autocomplete.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockspecials/blockspecials.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blocktags/blocktags.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockuserinfo/blockuserinfo.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockviewed/blockviewed.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/homefeatured/homefeatured.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/modules/themeconfigurator/css/hooks.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blocktopmenu/css/blocktopmenu.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blocktopmenu/css/superfish-modified.css" type="text/css" media="all"&gt; <br/>
+  &lt;script type="text/javascript"&gt;<br/>
+var CUSTOMIZE_TEXTFIELD = 1;<br/>
+var FancyboxI18nClose = 'Close';<br/>
+var FancyboxI18nNext = 'Next';<br/>
+var FancyboxI18nPrev = 'Previous';<br/>
+var ajax_allowed = true;<br/>
+var ajaxsearch = true;<br/>
+var baseDir = 'http://automationpractice.pl/';<br/>
+var baseUri = 'http://automationpractice.pl/index.php';<br/>
+var blocksearch_type = 'top';<br/>
+var comparator_max_item = '3';<br/>
+var comparedProductsIds = [];<br/>
+var contentOnly = false;<br/>
+var customizationIdMessage = 'Customization #';<br/>
+var delete_txt = 'Delete';<br/>
+var displayList = false;<br/>
+var freeProductTranslation = 'Free!';<br/>
+var freeShippingTranslation = 'Free shipping!';<br/>
+var generated_date = 1682183474;<br/>
+var hasDeliveryAddress = false;<br/>
+var id_lang = 1;<br/>
+var img_dir = 'http://automationpractice.pl/themes/default-bootstrap/img/';<br/>
+var instantsearch = false;<br/>
+var isGuest = 0;<br/>
+var isLogged = 0;<br/>
+var isMobile = false;<br/>
+var max_item = 'You cannot add more than 3 product(s) to the product comparison';<br/>
+var min_item = 'Please select at least one product';<br/>
+var page_name = 'search';<br/>
+var placeholder_blocknewsletter = 'Enter your e-mail';<br/>
+var priceDisplayMethod = 1;<br/>
+var priceDisplayPrecision = 2;<br/>
+var quickView = true;<br/>
+var removingLinkText = 'remove this product from my cart';<br/>
+var request = 'http://automationpractice.pl/index.php?controller=search&search_query=Dresses&submit_search=';<br/>
+var roundMode = 2;<br/>
+var search_url = 'http://automationpractice.pl/index.php?controller=search';<br/>
+var static_token = '8eb39ecde1064a454969d280a58bf6df';<br/>
+var toBeDetermined = 'To be determined';<br/>
+var token = 'd09eb3e65da86315f5751f976f16796c';<br/>
+var usingSecureMode = false;<br/>
+&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/jquery-1.11.0.min.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/jquery-migrate-1.2.1.min.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/plugins/jquery.easing.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/tools.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/global.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/autoload/10-bootstrap.min.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/autoload/15-jquery.total-storage.min.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/autoload/15-jquery.uniform-modified.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/plugins/fancybox/jquery.fancybox.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/products-comparison.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blockcart/ajax-cart.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/plugins/jquery.scrollTo.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/plugins/jquery.serialScroll.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/plugins/bxslider/jquery.bxslider.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/tools/treeManagement.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blocknewsletter/blocknewsletter.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/plugins/autocomplete/jquery.autocomplete.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blocksearch/blocksearch.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blocktopmenu/js/hoverIntent.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blocktopmenu/js/superfish-modified.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blocktopmenu/js/blocktopmenu.js"&gt;&lt;/script&gt; <br/>
+  &lt;link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,600&amp;subset=latin,latin-ext" type="text/css" media="all"&gt; &lt;!--[if IE 8]&gt;<br/>
+		&lt;script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"&gt;&lt;/script&gt;<br/>
+		&lt;script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"&gt;&lt;/script&gt;<br/>
+		&lt;![endif]--&gt; <br/>
+  &lt;style type="text/css"&gt;.fancybox-margin{margin-right:17px;}&lt;/style&gt;<br/>
+ &lt;/head&gt; <br/>
+ &lt;body id="search" class="search hide-right-column lang_en" style=""&gt; <br/>
+  &lt;div id="page"&gt; <br/>
+   &lt;div class="header-container"&gt; <br/>
+    &lt;header id="header"&gt; <br/>
+     &lt;div class="banner"&gt; <br/>
+      &lt;div class="container"&gt; <br/>
+       &lt;div class="row"&gt; &lt;a href="http://automationpractice.pl/" title=""&gt; &lt;img class="img-responsive" src="http://automationpractice.pl/modules/blockbanner/img/sale70.png" alt="" title="" width="1170" height="65"&gt; &lt;/a&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="nav"&gt; <br/>
+      &lt;div class="container"&gt; <br/>
+       &lt;div class="row"&gt; <br/>
+        &lt;nav&gt;<br/>
+         &lt;!-- Block user information module NAV  --&gt; <br/>
+         &lt;div class="header_user_info"&gt; &lt;a class="login" href="http://automationpractice.pl/index.php?controller=my-account" rel="nofollow" title="Log in to your customer account"&gt; Sign in &lt;/a&gt; <br/>
+         &lt;/div&gt; &lt;!-- /Block usmodule NAV --&gt; &lt;!-- Block languages module --&gt; &lt;!-- /Block languages module --&gt; <br/>
+         &lt;div id="contact-link"&gt; &lt;a href="http://automationpractice.pl/index.php?controller=contact" title="Contact us"&gt;Contact us&lt;/a&gt; <br/>
+         &lt;/div&gt; &lt;span class="shop-phone"&gt; &lt;i class="icon-phone"&gt;&lt;/i&gt;Call us now: &lt;strong&gt;0123-456-789&lt;/strong&gt; &lt;/span&gt; <br/>
+        &lt;/nav&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div&gt; <br/>
+      &lt;div class="container"&gt; <br/>
+       &lt;div class="row"&gt; <br/>
+        &lt;div id="header_logo"&gt; &lt;a href="http://automationpractice.pl/" title="My Store"&gt; &lt;img class="logo img-responsive" src="http://automationpractice.pl/img/logo.jpg" alt="My Store" width="350" height="99"&gt; &lt;/a&gt; <br/>
+        &lt;/div&gt; &lt;!-- Block search module TOP --&gt; <br/>
+        &lt;div id="search_block_top" class="col-sm-4 clearfix"&gt; <br/>
+         &lt;form id="searchbox" method="get" action="//automationpractice.pl/index.php?controller=search"&gt; <br/>
+          &lt;input type="hidden" name="controller" value="search"&gt; <br/>
+          &lt;input type="hidden" name="orderby" value="position"&gt; <br/>
+          &lt;input type="hidden" name="orderway" value="desc"&gt; <br/>
+          &lt;input class="search_query form-control ac_input" type="text" id="search_query_top" name="search_query" placeholder="Search" value="Dresses" autocomplete="off"&gt; &lt;button type="submit" name="submit_search" class="btn btn-default button-search"&gt; &lt;span&gt;Search&lt;/span&gt; &lt;/button&gt; <br/>
+         &lt;/form&gt; <br/>
+        &lt;/div&gt; &lt;!-- /Block search module TOP --&gt;&lt;!-- MODULE Block cart --&gt; <br/>
+        &lt;div class="col-sm-4 clearfix"&gt; <br/>
+         &lt;div class="shopping_cart"&gt; &lt;a href="http://automationpractice.pl/index.php?controller=order" title="View my shopping cart" rel="nofollow"&gt; &lt;b&gt;Cart&lt;/b&gt; &lt;span class="ajax_cart_quantity unvisible" style="display: inline;"&gt;2&lt;/span&gt; &lt;span class="ajax_cart_product_txt unvisible" style="display: none;"&gt;Product&lt;/span&gt; &lt;span class="ajax_cart_product_txt_s unvisible" style="display: inline;"&gt;Products&lt;/span&gt; &lt;span class="ajax_cart_total unvisible" style="display: inline;"&gt;$42.40&lt;/span&gt; &lt;span class="ajax_cart_no_product" style="display: none;"&gt;(empty)&lt;/span&gt; &lt;/a&gt; <br/>
+          &lt;div class="cart_block block exclusive"&gt; <br/>
+           &lt;div class="block_content"&gt; &lt;!-- block list of products --&gt; <br/>
+            &lt;div class="cart_block_list"&gt; <br/>
+             &lt;dl class="products"&gt;<br/>
+              &lt;dt class="first_item" data-id="cart_block_product_3_13_0" style="display: block;"&gt;<br/>
+               &lt;a class="cart-images" href="http://automationpractice.pl/index.php?id_product=3&amp;controller=product#/size-s/color-orange" title="Printed Dr..."&gt;&lt;img src="http://automationpractice.pl/img/p/8/8-cart_default.jpg" alt="Printed Dress"&gt;&lt;/a&gt;<br/>
+               &lt;div class="cart-info"&gt;<br/>
+                &lt;div class="product-name"&gt;<br/>
+                 &lt;span class="quantity-formated"&gt;&lt;span class="quantity"&gt;1&lt;/span&gt;&nbsp;x&nbsp;&lt;/span&gt;&lt;a href="http://automationpractice.pl/index.php?id_product=3&amp;controller=product#/size-s/color-orange" title="Printed Dress" class="cart_block_product_name"&gt;Printed Dr...&lt;/a&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div class="product-atributes"&gt;<br/>
+                 &lt;a href="http://automationpractice.pl/index.php?id_product=3&amp;controller=product#/size-s/color-orange" title="Printed Dress"&gt;S, Orange&lt;/a&gt;<br/>
+                &lt;/div&gt;&lt;span class="price"&gt;$26.00&lt;/span&gt;<br/>
+               &lt;/div&gt;&lt;span class="remove_link"&gt;&lt;a rel="nofollow" class="ajax_cart_block_remove_link" href="http://automationpractice.pl/index.php?controller=cart&amp;delete=1&amp;id_product=3&amp;token=8eb39ecde1064a454969d280a58bf6df&amp;ipa=13"&gt; &lt;/a&gt;&lt;/span&gt;<br/>
+              &lt;/dt&gt;<br/>
+              &lt;dd data-id="cart_block_combination_of_3_13_0" class="" style="display: block;"&gt;&lt;/dd&gt;<br/>
+              &lt;dt class="last_item" data-id="cart_block_product_7_34_0" style="display: block;"&gt;<br/>
+               &lt;a class="cart-images" href="http://automationpractice.pl/index.php?id_product=7&amp;controller=product#/size-s/color-yellow" title="Printed Ch..."&gt;&lt;img src="http://automationpractice.pl/img/p/2/0/20-cart_default.jpg" alt="Printed Chiffon Dress"&gt;&lt;/a&gt;<br/>
+               &lt;div class="cart-info"&gt;<br/>
+                &lt;div class="product-name"&gt;<br/>
+                 &lt;span class="quantity-formated"&gt;&lt;span class="quantity"&gt;1&lt;/span&gt;&nbsp;x&nbsp;&lt;/span&gt;&lt;a href="http://automationpractice.pl/index.php?id_product=7&amp;controller=product#/size-s/color-yellow" title="Printed Chiffon Dress" class="cart_block_product_name"&gt;Printed Ch...&lt;/a&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div class="product-atributes"&gt;<br/>
+                 &lt;a href="http://automationpractice.pl/index.php?id_product=7&amp;controller=product#/size-s/color-yellow" title="Printed Chiffon Dress"&gt;S, Yellow&lt;/a&gt;<br/>
+                &lt;/div&gt;&lt;span class="price"&gt;$16.40&lt;/span&gt;<br/>
+               &lt;/div&gt;&lt;span class="remove_link"&gt;&lt;a rel="nofollow" class="ajax_cart_block_remove_link" href="http://automationpractice.pl/index.php?controller=cart&amp;delete=1&amp;id_product=7&amp;token=8eb39ecde1064a454969d280a58bf6df&amp;ipa=34"&gt; &lt;/a&gt;&lt;/span&gt;<br/>
+              &lt;/dt&gt;<br/>
+              &lt;dd data-id="cart_block_combination_of_7_34_0" class="" style="display: block;"&gt;&lt;/dd&gt;<br/>
+             &lt;/dl&gt;<br/>
+             &lt;p class="cart_block_no_products" style="display: none;"&gt; No products &lt;/p&gt; <br/>
+             &lt;div class="cart-prices"&gt; <br/>
+              &lt;div class="cart-prices-line first-line"&gt; &lt;span class="price cart_block_shipping_cost ajax_cart_shipping_cost unvisible" style="display: inline;"&gt;$7.00&lt;/span&gt; &lt;span class="unvisible" style="display: inline;"&gt; Shipping &lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="cart-prices-line last-line"&gt; &lt;span class="price cart_block_total ajax_block_cart_total"&gt;$49.40&lt;/span&gt; &lt;span&gt;Total&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;p class="cart-buttons"&gt; &lt;a id="button_order_cart" class="btn btn-default button button-small" href="http://automationpractice.pl/index.php?controller=order" title="Check out" rel="nofollow"&gt; &lt;span&gt; Check out&lt;i class="icon-chevron-right right"&gt;&lt;/i&gt; &lt;/span&gt; &lt;/a&gt; &lt;/p&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt;&lt;!-- .cart_block --&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+        &lt;div id="layer_cart" style="display: block; top: 815px;"&gt; <br/>
+         &lt;div class="clearfix"&gt; <br/>
+          &lt;div class="layer_cart_product col-xs-12 col-md-6"&gt; &lt;span class="cross" title="Close window"&gt;&lt;/span&gt; <br/>
+           &lt;h2&gt; &lt;i class="icon-check"&gt;&lt;/i&gt;Product successfully added to your shopping cart &lt;/h2&gt; <br/>
+           &lt;div class="product-image-container layer_cart_img"&gt;<br/>
+            &lt;img class="layer_cart_img img-responsive" src="http://automationpractice.pl/img/p/2/0/20-home_default.jpg" alt="Printed Chiffon Dress" title="Printed Chiffon Dress"&gt;<br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="layer_cart_product_info"&gt; &lt;span id="layer_cart_product_title" class="product-name"&gt;Printed Chiffon Dress&lt;/span&gt; &lt;span id="layer_cart_product_attributes"&gt;S, Yellow&lt;/span&gt; <br/>
+            &lt;div&gt; &lt;strong class="dark"&gt;Quantity&lt;/strong&gt; &lt;span id="layer_cart_product_quantity"&gt;1&lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div&gt; &lt;strong class="dark"&gt;Total&lt;/strong&gt; &lt;span id="layer_cart_product_price"&gt;$16.40&lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="layer_cart_cart col-xs-12 col-md-6"&gt; <br/>
+           &lt;h2&gt; &lt;!-- Plural Case [both cases are needed because page may be updated in Javascript] --&gt; &lt;span class="ajax_cart_product_txt_s  unvisible" style="display: inline;"&gt; There are &lt;span class="ajax_cart_quantity"&gt;2&lt;/span&gt; items in your cart. &lt;/span&gt; &lt;!-- Singular Case [both cases are needed because page may be updated in Javascript] --&gt; &lt;span class="ajax_cart_product_txt " style="display: none;"&gt; There is 1 item in your cart. &lt;/span&gt; &lt;/h2&gt; <br/>
+           &lt;div class="layer_cart_row"&gt; &lt;strong class="dark"&gt; Total products &lt;/strong&gt; &lt;span class="ajax_block_products_total"&gt;$42.40&lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="layer_cart_row"&gt; &lt;strong class="dark unvisible" style="display: inline;"&gt; Total shipping&nbsp; &lt;/strong&gt; &lt;span class="ajax_cart_shipping_cost unvisible" style="display: inline;"&gt;$7.00&lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="layer_cart_row"&gt; &lt;strong class="dark"&gt; Total &lt;/strong&gt; &lt;span class="ajax_block_cart_total"&gt;$49.40&lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="button-container"&gt; &lt;span class="continue btn btn-default button exclusive-medium" title="Continue shopping"&gt; &lt;span&gt; &lt;i class="icon-chevron-left left"&gt;&lt;/i&gt;Continue shopping &lt;/span&gt; &lt;/span&gt; &lt;a class="btn btn-default button button-medium" href="http://automationpractice.pl/index.php?controller=order" title="Proceed to checkout" rel="nofollow"&gt; &lt;span&gt; Proceed to checkout&lt;i class="icon-chevron-right right"&gt;&lt;/i&gt; &lt;/span&gt; &lt;/a&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div class="crossseling"&gt;&lt;/div&gt; <br/>
+        &lt;/div&gt; &lt;!-- #layer_cart --&gt; <br/>
+        &lt;div class="layer_cart_overlay" style="display: block; width: 100%; height: 100%;"&gt;&lt;/div&gt; &lt;!-- /MODULE Block cart --&gt; &lt;!-- Menu --&gt; <br/>
+        &lt;div id="block_top_menu" class="sf-contener clearfix col-lg-12"&gt; <br/>
+         &lt;div class="cat-title"&gt;<br/>
+          Categories<br/>
+         &lt;/div&gt; <br/>
+         &lt;ul class="sf-menu clearfix menu-content sf-js-enabled sf-arrows"&gt; <br/>
+          &lt;li&gt;&lt;a href="http://automationpractice.pl/index.php?id_category=3&amp;controller=category" title="Women" class="sf-with-ul"&gt;Women&lt;/a&gt;<br/>
+           &lt;ul class="submenu-container clearfix first-in-line-xs" style="display: none;"&gt;<br/>
+            &lt;li&gt;&lt;a href="http://automationpractice.pl/index.php?id_category=4&amp;controller=category" title="Tops" class="sf-with-ul"&gt;Tops&lt;/a&gt;<br/>
+             &lt;ul style="display: none;"&gt;<br/>
+              &lt;li&gt;&lt;a href="http://automationpractice.pl/index.php?id_category=5&amp;controller=category" title="T-shirts"&gt;T-shirts&lt;/a&gt;&lt;/li&gt;<br/>
+              &lt;li&gt;&lt;a href="http://automationpractice.pl/index.php?id_category=7&amp;controller=category" title="Blouses"&gt;Blouses&lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;/ul&gt;&lt;/li&gt;<br/>
+            &lt;li&gt;&lt;a href="http://automationpractice.pl/index.php?id_category=8&amp;controller=category" title="Dresses" class="sf-with-ul"&gt;Dresses&lt;/a&gt;<br/>
+             &lt;ul style="display: none;"&gt;<br/>
+              &lt;li&gt;&lt;a href="http://automationpractice.pl/index.php?id_category=9&amp;controller=category" title="Casual Dresses"&gt;Casual Dresses&lt;/a&gt;&lt;/li&gt;<br/>
+              &lt;li&gt;&lt;a href="http://automationpractice.pl/index.php?id_category=10&amp;controller=category" title="Evening Dresses"&gt;Evening Dresses&lt;/a&gt;&lt;/li&gt;<br/>
+              &lt;li&gt;&lt;a href="http://automationpractice.pl/index.php?id_category=11&amp;controller=category" title="Summer Dresses"&gt;Summer Dresses&lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;/ul&gt;&lt;/li&gt;<br/>
+            &lt;li class="category-thumbnail"&gt;<br/>
+             &lt;div&gt;<br/>
+              &lt;img src="http://automationpractice.pl/img/c/3-0_thumb.jpg" alt="Women" title="Women" class="imgm"&gt;<br/>
+             &lt;/div&gt;<br/>
+             &lt;div&gt;<br/>
+              &lt;img src="http://automationpractice.pl/img/c/3-1_thumb.jpg" alt="Women" title="Women" class="imgm"&gt;<br/>
+             &lt;/div&gt;&lt;/li&gt;<br/>
+           &lt;/ul&gt;&lt;/li&gt;<br/>
+          &lt;li&gt;&lt;a href="http://automationpractice.pl/index.php?id_category=8&amp;controller=category" title="Dresses" class="sf-with-ul"&gt;Dresses&lt;/a&gt;<br/>
+           &lt;ul class="submenu-container clearfix first-in-line-xs" style="display: none;"&gt;<br/>
+            &lt;li&gt;&lt;a href="http://automationpractice.pl/index.php?id_category=9&amp;controller=category" title="Casual Dresses"&gt;Casual Dresses&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li&gt;&lt;a href="http://automationpractice.pl/index.php?id_category=10&amp;controller=category" title="Evening Dresses"&gt;Evening Dresses&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li&gt;&lt;a href="http://automationpractice.pl/index.php?id_category=11&amp;controller=category" title="Summer Dresses"&gt;Summer Dresses&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li class="category-thumbnail"&gt;&lt;/li&gt;<br/>
+           &lt;/ul&gt;&lt;/li&gt;<br/>
+          &lt;li&gt;&lt;a href="http://automationpractice.pl/index.php?id_category=5&amp;controller=category" title="T-shirts"&gt;T-shirts&lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;li&gt;&lt;a href="http://www.prestashop.com/blog/" onclick="return !window.open(this.href);" title="Blog"&gt;Blog&lt;/a&gt;&lt;/li&gt; <br/>
+         &lt;/ul&gt; <br/>
+        &lt;/div&gt; &lt;!--/ Menu --&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/header&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="columns-container"&gt; <br/>
+    &lt;div id="columns" class="container"&gt; &lt;!-- Breadcrumb --&gt; <br/>
+     &lt;div class="breadcrumb clearfix"&gt; &lt;a class="home" href="http://automationpractice.pl/" title="Return to Home"&gt;&lt;i class="icon-home"&gt;&lt;/i&gt;&lt;/a&gt; &lt;span class="navigation-pipe"&gt;&gt;&lt;/span&gt; Search <br/>
+     &lt;/div&gt; &lt;!-- /Breadcrumb --&gt; <br/>
+     &lt;div id="slider_row" class="row"&gt; <br/>
+      &lt;div id="top_column" class="center_column col-xs-12 col-sm-12"&gt;&lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="row"&gt; <br/>
+      &lt;div id="left_column" class="column col-xs-12 col-sm-3"&gt;<br/>
+       &lt;!-- MODULE Block best sellers --&gt; <br/>
+       &lt;div id="best-sellers_block_right" class="block products_block"&gt; <br/>
+        &lt;h4 class="title_block"&gt; &lt;a href="http://automationpractice.pl/index.php?controller=best-sales" title="View a top sellers products"&gt;Top sellers&lt;/a&gt; &lt;/h4&gt; <br/>
+        &lt;div class="block_content" style=""&gt; <br/>
+         &lt;ul class="block_content products-block" style=""&gt; <br/>
+          &lt;li class="clearfix"&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=2&amp;controller=product" title="" class="products-block-image content_img clearfix"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.pl/img/p/7/7-small_default.jpg" alt=""&gt; &lt;/a&gt; <br/>
+           &lt;div class="product-content"&gt; <br/>
+            &lt;h5&gt; &lt;a class="product-name" href="http://automationpractice.pl/index.php?id_product=2&amp;controller=product" title=""&gt; Blouse &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-description"&gt;Short sleeved blouse with feminine draped sleeve detail.&lt;/p&gt; <br/>
+            &lt;div class="price-box"&gt; &lt;span class="price"&gt;$27.00&lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; &lt;/li&gt; <br/>
+          &lt;li class="clearfix"&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=1&amp;controller=product" title="" class="products-block-image content_img clearfix"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.pl/img/p/1/1-small_default.jpg" alt=""&gt; &lt;/a&gt; <br/>
+           &lt;div class="product-content"&gt; <br/>
+            &lt;h5&gt; &lt;a class="product-name" href="http://automationpractice.pl/index.php?id_product=1&amp;controller=product" title=""&gt; Faded Short Sleeve T-shirts &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-description"&gt;Faded short sleeve t-shirt with high neckline. Soft and stretchy...&lt;/p&gt; <br/>
+            &lt;div class="price-box"&gt; &lt;span class="price"&gt;$16.51&lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; &lt;/li&gt; <br/>
+          &lt;li class="clearfix"&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=3&amp;controller=product" title="" class="products-block-image content_img clearfix"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.pl/img/p/8/8-small_default.jpg" alt=""&gt; &lt;/a&gt; <br/>
+           &lt;div class="product-content"&gt; <br/>
+            &lt;h5&gt; &lt;a class="product-name" href="http://automationpractice.pl/index.php?id_product=3&amp;controller=product" title=""&gt; Printed Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-description"&gt;100% cotton double printed dress. Black and white striped top and orange...&lt;/p&gt; <br/>
+            &lt;div class="price-box"&gt; &lt;span class="price"&gt;$26.00&lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; &lt;/li&gt; <br/>
+          &lt;li class="clearfix"&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=6&amp;controller=product" title="" class="products-block-image content_img clearfix"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.pl/img/p/1/6/16-small_default.jpg" alt=""&gt; &lt;/a&gt; <br/>
+           &lt;div class="product-content"&gt; <br/>
+            &lt;h5&gt; &lt;a class="product-name" href="http://automationpractice.pl/index.php?id_product=6&amp;controller=product" title=""&gt; Printed Summer Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-description"&gt;Sleeveless knee-length chiffon dress. V-neckline with elastic under the...&lt;/p&gt; <br/>
+            &lt;div class="price-box"&gt; &lt;span class="price"&gt;$30.50&lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; &lt;/li&gt; <br/>
+          &lt;li class="clearfix"&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=7&amp;controller=product" title="" class="products-block-image content_img clearfix"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.pl/img/p/2/0/20-small_default.jpg" alt=""&gt; &lt;/a&gt; <br/>
+           &lt;div class="product-content"&gt; <br/>
+            &lt;h5&gt; &lt;a class="product-name" href="http://automationpractice.pl/index.php?id_product=7&amp;controller=product" title=""&gt; Printed Chiffon Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-description"&gt;Printed chiffon knee length dress with tank straps. Deep v-neckline.&lt;/p&gt; <br/>
+            &lt;div class="price-box"&gt; &lt;span class="price"&gt;$16.40&lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; &lt;/li&gt; <br/>
+          &lt;li class="clearfix"&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=5&amp;controller=product" title="" class="products-block-image content_img clearfix"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.pl/img/p/1/2/12-small_default.jpg" alt=""&gt; &lt;/a&gt; <br/>
+           &lt;div class="product-content"&gt; <br/>
+            &lt;h5&gt; &lt;a class="product-name" href="http://automationpractice.pl/index.php?id_product=5&amp;controller=product" title=""&gt; Printed Summer Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-description"&gt;Long printed dress with thin adjustable straps. V-neckline and wiring...&lt;/p&gt; <br/>
+            &lt;div class="price-box"&gt; &lt;span class="price"&gt;$28.98&lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; &lt;/li&gt; <br/>
+         &lt;/ul&gt; <br/>
+         &lt;div class="lnk"&gt; &lt;a href="http://automationpractice.pl/index.php?controller=best-sales" title="All best sellers" class="btn btn-default button button-small"&gt;&lt;span&gt;All best sellers&lt;i class="icon-chevron-right right"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; &lt;!-- /MODULE Block best sellers --&gt;&lt;!-- Block categories module --&gt; <br/>
+       &lt;div id="categories_block_left" class="block"&gt; <br/>
+        &lt;h2 class="title_block"&gt; Categories &lt;/h2&gt; <br/>
+        &lt;div class="block_content" style=""&gt; <br/>
+         &lt;ul class="tree dynamized" style="display: block;"&gt; <br/>
+          &lt;li&gt; &lt;span class="grower CLOSE"&gt; &lt;/span&gt;&lt;a href="http://automationpractice.pl/index.php?id_category=3&amp;controller=category" title="You will find here all woman fashion collections.  <br/>
+ This category includes all the basics of your wardrobe and much more: <br/>
+ shoes, accessories, printed t-shirts, feminine dresses, women's jeans!"&gt; Women &lt;/a&gt; <br/>
+           &lt;ul style="display: none;"&gt; <br/>
+            &lt;li&gt; &lt;span class="grower CLOSE"&gt; &lt;/span&gt;&lt;a href="http://automationpractice.pl/index.php?id_category=4&amp;controller=category" title="Choose from t-shirts, tops, blouses, short sleeves, long sleeves, tank tops, 3/4 sleeves and more. <br/>
+ Find the cut that suits you the best!"&gt; Tops &lt;/a&gt; <br/>
+             &lt;ul style="display: none;"&gt; <br/>
+              &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_category=5&amp;controller=category" title="The must have of your wardrobe, take a look at our different colors, <br/>
+ shapes and style of our collection!"&gt; T-shirts &lt;/a&gt; &lt;/li&gt; <br/>
+              &lt;li class="last"&gt; &lt;a href="http://automationpractice.pl/index.php?id_category=7&amp;controller=category" title="Match your favorites blouses with the right accessories for the perfect look."&gt; Blouses &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;/ul&gt; &lt;/li&gt; <br/>
+            &lt;li class="last"&gt; &lt;span class="grower CLOSE"&gt; &lt;/span&gt;&lt;a href="http://automationpractice.pl/index.php?id_category=8&amp;controller=category" title="Find your favorites dresses from our wide choice of evening, casual or summer dresses! <br/>
+ We offer dresses for every day, every style and every occasion."&gt; Dresses &lt;/a&gt; <br/>
+             &lt;ul style="display: none;"&gt; <br/>
+              &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_category=9&amp;controller=category" title="You are looking for a dress for every day? Take a look at <br/>
+ our selection of dresses to find one that suits you."&gt; Casual Dresses &lt;/a&gt; &lt;/li&gt; <br/>
+              &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_category=10&amp;controller=category" title="Browse our different dresses to choose the perfect dress for an unforgettable evening!"&gt; Evening Dresses &lt;/a&gt; &lt;/li&gt; <br/>
+              &lt;li class="last"&gt; &lt;a href="http://automationpractice.pl/index.php?id_category=11&amp;controller=category" title="Short dress, long dress, silk dress, printed dress, you will find the perfect dress for summer."&gt; Summer Dresses &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;/ul&gt; &lt;/li&gt; <br/>
+           &lt;/ul&gt; &lt;/li&gt; <br/>
+          &lt;li class="last"&gt; &lt;a href="http://automationpractice.pl/index.php?id_category=12&amp;controller=category" title=""&gt; Home &lt;/a&gt; &lt;/li&gt; <br/>
+         &lt;/ul&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; &lt;!-- /Block categories module --&gt; &lt;!-- Block CMS module --&gt; <br/>
+       &lt;section id="informations_block_left_1" class="block informations_block_left"&gt; <br/>
+        &lt;p class="title_block"&gt; &lt;a href="http://automationpractice.pl/index.php?id_cms_category=1&amp;controller=cms"&gt; Information &lt;/a&gt; &lt;/p&gt; <br/>
+        &lt;div class="block_content list-block" style=""&gt; <br/>
+         &lt;ul&gt; <br/>
+          &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_cms=1&amp;controller=cms" title="Delivery"&gt; Delivery &lt;/a&gt; &lt;/li&gt; <br/>
+          &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_cms=2&amp;controller=cms" title="Legal Notice"&gt; Legal Notice &lt;/a&gt; &lt;/li&gt; <br/>
+          &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_cms=3&amp;controller=cms" title="Terms and conditions of use"&gt; Terms and conditions of use &lt;/a&gt; &lt;/li&gt; <br/>
+          &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_cms=4&amp;controller=cms" title="About us"&gt; About us &lt;/a&gt; &lt;/li&gt; <br/>
+          &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_cms=5&amp;controller=cms" title="Secure payment"&gt; Secure payment &lt;/a&gt; &lt;/li&gt; <br/>
+          &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?controller=stores" title="Our stores"&gt; Our stores &lt;/a&gt; &lt;/li&gt; <br/>
+         &lt;/ul&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/section&gt; &lt;!-- /Block CMS module --&gt; &lt;!-- Block manufacturers module --&gt; <br/>
+       &lt;div id="manufacturers_block_left" class="block blockmanufacturer"&gt; <br/>
+        &lt;p class="title_block"&gt; &lt;a href="http://automationpractice.pl/index.php?controller=manufacturer" title="Manufacturers"&gt; Manufacturers &lt;/a&gt; &lt;/p&gt; <br/>
+        &lt;div class="block_content list-block" style=""&gt; <br/>
+         &lt;ul&gt; <br/>
+          &lt;li class="last_item"&gt; &lt;a href="http://automationpractice.pl/index.php?id_manufacturer=1&amp;controller=manufacturer" title="More about Fashion Manufacturer"&gt; Fashion Manufacturer &lt;/a&gt; &lt;/li&gt; <br/>
+         &lt;/ul&gt; <br/>
+         &lt;form action="/index.php" method="get"&gt; <br/>
+          &lt;div class="form-group selector1"&gt; <br/>
+           &lt;div class="selector" style="width: 268.4px;"&gt;<br/>
+            &lt;span style="width: 258.4px; user-select: none;"&gt;All manufacturers&lt;/span&gt;&lt;select class="form-control" name="manufacturer_list"&gt; &lt;option value="0"&gt;All manufacturers&lt;/option&gt; &lt;option value="http://automationpractice.pl/index.php?id_manufacturer=1&amp;controller=manufacturer"&gt;Fashion Manufacturer&lt;/option&gt; &lt;/select&gt;<br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/form&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; &lt;!-- /Block manufacturers module --&gt; &lt;!-- MODULE Block specials --&gt; <br/>
+       &lt;div id="special_block_right" class="block"&gt; <br/>
+        &lt;p class="title_block"&gt; &lt;a href="http://automationpractice.pl/index.php?controller=prices-drop" title="Specials"&gt; Specials &lt;/a&gt; &lt;/p&gt; <br/>
+        &lt;div class="block_content products-block" style=""&gt; <br/>
+         &lt;ul&gt; <br/>
+          &lt;li class="clearfix"&gt; &lt;a class="products-block-image" href="http://automationpractice.pl/index.php?id_product=5&amp;controller=product"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.pl/img/p/1/2/12-small_default.jpg" alt="" title="Printed Summer Dress"&gt; &lt;/a&gt; <br/>
+           &lt;div class="product-content"&gt; <br/>
+            &lt;h5&gt; &lt;a class="product-name" href="http://automationpractice.pl/index.php?id_product=5&amp;controller=product" title="Printed Summer Dress"&gt; Printed Summer Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-description"&gt; Long printed dress with thin... &lt;/p&gt; <br/>
+            &lt;div class="price-box"&gt; &lt;span class="price special-price"&gt; $28.98 &lt;/span&gt; &lt;span class="price-percent-reduction"&gt;-5%&lt;/span&gt; &lt;span class="old-price"&gt; $30.51 &lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; &lt;/li&gt; <br/>
+         &lt;/ul&gt; <br/>
+         &lt;div&gt; &lt;a class="btn btn-default button button-small" href="http://automationpractice.pl/index.php?controller=prices-drop" title="All specials"&gt; &lt;span&gt;All specials&lt;i class="icon-chevron-right right"&gt;&lt;/i&gt;&lt;/span&gt; &lt;/a&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; &lt;!-- /MODULE Block specials --&gt; &lt;!-- Block stores module --&gt; <br/>
+       &lt;div id="stores_block_left" class="block"&gt; <br/>
+        &lt;p class="title_block"&gt; &lt;a href="http://automationpractice.pl/index.php?controller=stores" title="Our stores"&gt; Our stores &lt;/a&gt; &lt;/p&gt; <br/>
+        &lt;div class="block_content blockstore" style=""&gt; <br/>
+         &lt;p class="store_image"&gt; &lt;a href="http://automationpractice.pl/index.php?controller=stores" title="Our stores"&gt; &lt;img class="img-responsive" src="http://automationpractice.pl/modules/blockstore/store.jpg" alt="Our stores"&gt; &lt;/a&gt; &lt;/p&gt; <br/>
+         &lt;div&gt; &lt;a class="btn btn-default button button-small" href="http://automationpractice.pl/index.php?controller=stores" title="Our stores"&gt; &lt;span&gt;Discover our stores&lt;i class="icon-chevron-right right"&gt;&lt;/i&gt;&lt;/span&gt; &lt;/a&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; &lt;!-- /Block stores module --&gt; &lt;!-- Block suppliers module --&gt; <br/>
+       &lt;div id="suppliers_block_left" class="block blocksupplier"&gt; <br/>
+        &lt;p class="title_block"&gt; &lt;a href="http://automationpractice.pl/index.php?controller=supplier" title="Suppliers"&gt; Suppliers &lt;/a&gt; &lt;/p&gt; <br/>
+        &lt;div class="block_content list-block" style=""&gt; <br/>
+         &lt;ul&gt; <br/>
+          &lt;li class="last_item"&gt; &lt;a href="http://automationpractice.pl/index.php?id_supplier=1&amp;controller=supplier" title="More about Fashion Supplier"&gt; Fashion Supplier &lt;/a&gt; &lt;/li&gt; <br/>
+         &lt;/ul&gt; <br/>
+         &lt;form action="/index.php" method="get"&gt; <br/>
+          &lt;div class="form-group selector1"&gt; <br/>
+           &lt;div class="selector" style="width: 268.4px;"&gt;<br/>
+            &lt;span style="width: 258.4px; user-select: none;"&gt;All suppliers&lt;/span&gt;&lt;select class="form-control" name="supplier_list"&gt; &lt;option value="0"&gt;All suppliers&lt;/option&gt; &lt;option value="http://automationpractice.pl/index.php?id_supplier=1&amp;controller=supplier"&gt;Fashion Supplier&lt;/option&gt; &lt;/select&gt;<br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/form&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; &lt;!-- /Block suppliers module --&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div id="center_column" class="center_column col-xs-12 col-sm-9"&gt; <br/>
+       &lt;h1 class="page-heading  product-listing"&gt; Search&nbsp; &lt;span class="lighter"&gt; "Dresses" &lt;/span&gt; &lt;span class="heading-counter"&gt; 7 results have been found. &lt;/span&gt; &lt;/h1&gt; <br/>
+       &lt;div class="content_sortPagiBar"&gt; <br/>
+        &lt;div class="sortPagiBar clearfix "&gt; <br/>
+         &lt;ul class="display hidden-xs"&gt; <br/>
+          &lt;li class="display-title"&gt;View:&lt;/li&gt; <br/>
+          &lt;li id="grid" class="selected"&gt;&lt;a rel="nofollow" href="#" title="Grid"&gt;&lt;i class="icon-th-large"&gt;&lt;/i&gt;Grid&lt;/a&gt;&lt;/li&gt; <br/>
+          &lt;li id="list"&gt;&lt;a rel="nofollow" href="#" title="List"&gt;&lt;i class="icon-th-list"&gt;&lt;/i&gt;List&lt;/a&gt;&lt;/li&gt; <br/>
+         &lt;/ul&gt; <br/>
+         &lt;form id="productsSortForm" action="http://automationpractice.pl/index.php?controller=search&amp;search_query=Dresses&amp;submit_search=" class="productsSortForm"&gt; <br/>
+          &lt;div class="select selector1"&gt; &lt;label for="selectProductSort"&gt;Sort by&lt;/label&gt; <br/>
+           &lt;div class="selector" id="uniform-selectProductSort" style="width: 190.4px;"&gt;<br/>
+            &lt;span style="width: 180.4px; user-select: none;"&gt;--&lt;/span&gt;&lt;select id="selectProductSort" class="selectProductSort form-control"&gt; &lt;option value="position:asc" selected&gt;--&lt;/option&gt; &lt;option value="price:asc"&gt;Price: Lowest first&lt;/option&gt; &lt;option value="price:desc"&gt;Price: Highest first&lt;/option&gt; &lt;option value="name:asc"&gt;Product Name: A to Z&lt;/option&gt; &lt;option value="name:desc"&gt;Product Name: Z to A&lt;/option&gt; &lt;option value="quantity:desc"&gt;In stock&lt;/option&gt; &lt;option value="reference:asc"&gt;Reference: Lowest first&lt;/option&gt; &lt;option value="reference:desc"&gt;Reference: Highest first&lt;/option&gt; &lt;/select&gt;<br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/form&gt; &lt;!-- /Sort products --&gt; &lt;!-- nbr product/page --&gt; &lt;!-- /nbr product/page --&gt; <br/>
+        &lt;/div&gt; <br/>
+        &lt;div class="top-pagination-content clearfix"&gt; <br/>
+         &lt;form method="post" action="http://automationpractice.pl/index.php?controller=products-comparison" class="compare-form"&gt; &lt;button type="submit" class="btn btn-default button button-medium bt_compare bt_compare" disabled&gt; &lt;span&gt;Compare (&lt;strong class="total-compare-val"&gt;0&lt;/strong&gt;)&lt;i class="icon-chevron-right right"&gt;&lt;/i&gt;&lt;/span&gt; &lt;/button&gt; <br/>
+          &lt;input type="hidden" name="compare_product_count" class="compare_product_count" value="0"&gt; <br/>
+          &lt;input type="hidden" name="compare_product_list" class="compare_product_list" value=""&gt; <br/>
+         &lt;/form&gt; &lt;!-- Pagination --&gt; <br/>
+         &lt;div id="pagination" class="pagination clearfix"&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div class="product-count"&gt;<br/>
+           Showing 1 - 7 of 7 items <br/>
+         &lt;/div&gt; &lt;!-- /Pagination --&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; &lt;!-- Products list --&gt; <br/>
+       &lt;ul class="product_list grid row"&gt; <br/>
+        &lt;li class="ajax_block_product col-xs-12 col-sm-6 col-md-4 first-in-line first-item-of-tablet-line first-item-of-mobile-line" style="height: auto; margin-bottom: 0px;"&gt; <br/>
+         &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+          &lt;div class="left-block"&gt; <br/>
+           &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.pl/index.php?id_product=3&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="Printed Dress" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.pl/img/p/8/8-home_default.jpg" alt="Printed Dress" title="Printed Dress" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+            &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.pl/index.php?id_product=3&amp;controller=product&amp;search_query=Dresses&amp;results=7" rel="http://automationpractice.pl/index.php?id_product=3&amp;controller=product&amp;search_query=Dresses&amp;results=7"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.pl/index.php?id_product=3&amp;controller=product&amp;search_query=Dresses&amp;results=7" rel="http://automationpractice.pl/index.php?id_product=3&amp;controller=product&amp;search_query=Dresses&amp;results=7"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $26.00 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+             &lt;link itemprop="availability" href="http://schema.org/InStock"&gt;In stock <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="right-block"&gt; <br/>
+           &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.pl/index.php?id_product=3&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="Printed Dress" itemprop="url"&gt; Printed Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+           &lt;p class="product-desc" itemprop="description"&gt; 100% cotton double printed dress. Black and white striped top and orange high waisted skater skirt bottom. &lt;/p&gt; <br/>
+           &lt;div class="content_price"&gt; &lt;span class="price product-price"&gt; $26.00 &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="button-container" style="display: none;"&gt; &lt;a class="button ajax_add_to_cart_button btn btn-default" href="http://automationpractice.pl/index.php?controller=cart&amp;add=1&amp;id_product=3&amp;token=8eb39ecde1064a454969d280a58bf6df" rel="nofollow" title="Add to cart" data-id-product="3" data-minimal_quantity="1"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/a&gt; &lt;a class="button lnk_view btn btn-default" href="http://automationpractice.pl/index.php?id_product=3&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="color-list-container"&gt;<br/>
+            &lt;ul class="color_to_pick_list clearfix"&gt; <br/>
+             &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=3&amp;controller=product#/size-s/color-orange" id="color_13" class="color_pick" style="background:#F39C11;"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+            &lt;/ul&gt;<br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="product-flags"&gt; <br/>
+           &lt;/div&gt; &lt;span class="availability"&gt; &lt;span class="available-now"&gt; In stock &lt;/span&gt; &lt;/span&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="functional-buttons clearfix" style=""&gt; <br/>
+           &lt;div class="compare"&gt; &lt;a class="add_to_compare" href="http://automationpractice.pl/index.php?id_product=3&amp;controller=product&amp;search_query=Dresses&amp;results=7" data-id-product="3"&gt;Add to Compare&lt;/a&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+        &lt;li class="ajax_block_product col-xs-12 col-sm-6 col-md-4 last-item-of-tablet-line" style="height: auto; margin-bottom: 0px;"&gt; <br/>
+         &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+          &lt;div class="left-block"&gt; <br/>
+           &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.pl/index.php?id_product=4&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="Printed Dress" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.pl/img/p/1/0/10-home_default.jpg" alt="Printed Dress" title="Printed Dress" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+            &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.pl/index.php?id_product=4&amp;controller=product&amp;search_query=Dresses&amp;results=7" rel="http://automationpractice.pl/index.php?id_product=4&amp;controller=product&amp;search_query=Dresses&amp;results=7"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.pl/index.php?id_product=4&amp;controller=product&amp;search_query=Dresses&amp;results=7" rel="http://automationpractice.pl/index.php?id_product=4&amp;controller=product&amp;search_query=Dresses&amp;results=7"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $50.99 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+             &lt;link itemprop="availability" href="http://schema.org/InStock"&gt;In stock <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="right-block"&gt; <br/>
+           &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.pl/index.php?id_product=4&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="Printed Dress" itemprop="url"&gt; Printed Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+           &lt;p class="product-desc" itemprop="description"&gt; Printed evening dress with straight sleeves with black thin waist belt and ruffled linings. &lt;/p&gt; <br/>
+           &lt;div class="content_price"&gt; &lt;span class="price product-price"&gt; $50.99 &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="button-container" style="display: none;"&gt; &lt;a class="button ajax_add_to_cart_button btn btn-default" href="http://automationpractice.pl/index.php?controller=cart&amp;add=1&amp;id_product=4&amp;token=8eb39ecde1064a454969d280a58bf6df" rel="nofollow" title="Add to cart" data-id-product="4" data-minimal_quantity="1"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/a&gt; &lt;a class="button lnk_view btn btn-default" href="http://automationpractice.pl/index.php?id_product=4&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="color-list-container"&gt;<br/>
+            &lt;ul class="color_to_pick_list clearfix"&gt; <br/>
+             &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=4&amp;controller=product#/size-s/color-beige" id="color_16" class="color_pick" style="background:#f5f5dc;"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=4&amp;controller=product#/size-s/color-pink" id="color_43" class="color_pick" style="background:#FCCACD;"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+            &lt;/ul&gt;<br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="product-flags"&gt; <br/>
+           &lt;/div&gt; &lt;span class="availability"&gt; &lt;span class="available-now"&gt; In stock &lt;/span&gt; &lt;/span&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="functional-buttons clearfix" style=""&gt; <br/>
+           &lt;div class="compare"&gt; &lt;a class="add_to_compare" href="http://automationpractice.pl/index.php?id_product=4&amp;controller=product&amp;search_query=Dresses&amp;results=7" data-id-product="4"&gt;Add to Compare&lt;/a&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+        &lt;li class="ajax_block_product col-xs-12 col-sm-6 col-md-4 last-in-line first-item-of-tablet-line last-item-of-mobile-line"&gt; <br/>
+         &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+          &lt;div class="left-block"&gt; <br/>
+           &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.pl/index.php?id_product=5&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="Printed Summer Dress" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.pl/img/p/1/2/12-home_default.jpg" alt="Printed Summer Dress" title="Printed Summer Dress" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+            &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.pl/index.php?id_product=5&amp;controller=product&amp;search_query=Dresses&amp;results=7" rel="http://automationpractice.pl/index.php?id_product=5&amp;controller=product&amp;search_query=Dresses&amp;results=7"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.pl/index.php?id_product=5&amp;controller=product&amp;search_query=Dresses&amp;results=7" rel="http://automationpractice.pl/index.php?id_product=5&amp;controller=product&amp;search_query=Dresses&amp;results=7"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $28.98 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; &lt;span class="old-price product-price"&gt; $30.51 &lt;/span&gt; &lt;span class="price-percent-reduction"&gt;-5%&lt;/span&gt; <br/>
+             &lt;link itemprop="availability" href="http://schema.org/InStock"&gt;In stock <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="right-block"&gt; <br/>
+           &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.pl/index.php?id_product=5&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="Printed Summer Dress" itemprop="url"&gt; Printed Summer Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+           &lt;p class="product-desc" itemprop="description"&gt; Long printed dress with thin adjustable straps. V-neckline and wiring under the bust with ruffles at the bottom of the dress. &lt;/p&gt; <br/>
+           &lt;div class="content_price"&gt; &lt;span class="price product-price"&gt; $28.98 &lt;/span&gt; &lt;span class="old-price product-price"&gt; $30.51 &lt;/span&gt; &lt;span class="price-percent-reduction"&gt;-5%&lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="button-container" style="display: none;"&gt; &lt;a class="button ajax_add_to_cart_button btn btn-default" href="http://automationpractice.pl/index.php?controller=cart&amp;add=1&amp;id_product=5&amp;token=8eb39ecde1064a454969d280a58bf6df" rel="nofollow" title="Add to cart" data-id-product="5" data-minimal_quantity="1"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/a&gt; &lt;a class="button lnk_view btn btn-default" href="http://automationpractice.pl/index.php?id_product=5&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="color-list-container"&gt;<br/>
+            &lt;ul class="color_to_pick_list clearfix"&gt; <br/>
+             &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=5&amp;controller=product#/size-s/color-black" id="color_22" class="color_pick" style="background:#434A54;"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=5&amp;controller=product#/size-s/color-orange" id="color_21" class="color_pick" style="background:#F39C11;"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=5&amp;controller=product#/size-s/color-blue" id="color_20" class="color_pick" style="background:#5D9CEC;"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=5&amp;controller=product#/size-s/color-yellow" id="color_19" class="color_pick" style="background:#F1C40F;"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+            &lt;/ul&gt;<br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="product-flags"&gt; &lt;span class="discount"&gt;Reduced price!&lt;/span&gt; <br/>
+           &lt;/div&gt; &lt;span class="availability"&gt; &lt;span class="available-now"&gt; In stock &lt;/span&gt; &lt;/span&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="functional-buttons clearfix"&gt; <br/>
+           &lt;div class="compare"&gt; &lt;a class="add_to_compare" href="http://automationpractice.pl/index.php?id_product=5&amp;controller=product&amp;search_query=Dresses&amp;results=7" data-id-product="5"&gt;Add to Compare&lt;/a&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+        &lt;li class="ajax_block_product col-xs-12 col-sm-6 col-md-4 first-in-line last-item-of-tablet-line first-item-of-mobile-line"&gt; <br/>
+         &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+          &lt;div class="left-block"&gt; <br/>
+           &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.pl/index.php?id_product=6&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="Printed Summer Dress" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.pl/img/p/1/6/16-home_default.jpg" alt="Printed Summer Dress" title="Printed Summer Dress" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+            &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.pl/index.php?id_product=6&amp;controller=product&amp;search_query=Dresses&amp;results=7" rel="http://automationpractice.pl/index.php?id_product=6&amp;controller=product&amp;search_query=Dresses&amp;results=7"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.pl/index.php?id_product=6&amp;controller=product&amp;search_query=Dresses&amp;results=7" rel="http://automationpractice.pl/index.php?id_product=6&amp;controller=product&amp;search_query=Dresses&amp;results=7"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $30.50 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+             &lt;link itemprop="availability" href="http://schema.org/InStock"&gt;In stock <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="right-block"&gt; <br/>
+           &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.pl/index.php?id_product=6&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="Printed Summer Dress" itemprop="url"&gt; Printed Summer Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+           &lt;p class="product-desc" itemprop="description"&gt; Sleeveless knee-length chiffon dress. V-neckline with elastic under the bust lining. &lt;/p&gt; <br/>
+           &lt;div class="content_price"&gt; &lt;span class="price product-price"&gt; $30.50 &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="button-container" style="display: none;"&gt; &lt;a class="button ajax_add_to_cart_button btn btn-default" href="http://automationpractice.pl/index.php?controller=cart&amp;add=1&amp;id_product=6&amp;token=8eb39ecde1064a454969d280a58bf6df" rel="nofollow" title="Add to cart" data-id-product="6" data-minimal_quantity="1"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/a&gt; &lt;a class="button lnk_view btn btn-default" href="http://automationpractice.pl/index.php?id_product=6&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="color-list-container"&gt;<br/>
+            &lt;ul class="color_to_pick_list clearfix"&gt; <br/>
+             &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=6&amp;controller=product#/size-s/color-white" id="color_40" class="color_pick" style="background:#ffffff;"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=6&amp;controller=product#/size-s/color-yellow" id="color_31" class="color_pick" style="background:#F1C40F;"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+            &lt;/ul&gt;<br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="product-flags"&gt; <br/>
+           &lt;/div&gt; &lt;span class="availability"&gt; &lt;span class="available-now"&gt; In stock &lt;/span&gt; &lt;/span&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="functional-buttons clearfix"&gt; <br/>
+           &lt;div class="compare"&gt; &lt;a class="add_to_compare" href="http://automationpractice.pl/index.php?id_product=6&amp;controller=product&amp;search_query=Dresses&amp;results=7" data-id-product="6"&gt;Add to Compare&lt;/a&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+        &lt;li class="ajax_block_product col-xs-12 col-sm-6 col-md-4 first-item-of-tablet-line" style="height: auto; margin-bottom: 0px;"&gt; <br/>
+         &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+          &lt;div class="left-block"&gt; <br/>
+           &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.pl/index.php?id_product=7&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="Printed Chiffon Dress" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.pl/img/p/2/0/20-home_default.jpg" alt="Printed Chiffon Dress" title="Printed Chiffon Dress" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+            &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.pl/index.php?id_product=7&amp;controller=product&amp;search_query=Dresses&amp;results=7" rel="http://automationpractice.pl/index.php?id_product=7&amp;controller=product&amp;search_query=Dresses&amp;results=7"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.pl/index.php?id_product=7&amp;controller=product&amp;search_query=Dresses&amp;results=7" rel="http://automationpractice.pl/index.php?id_product=7&amp;controller=product&amp;search_query=Dresses&amp;results=7"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $16.40 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; &lt;span class="old-price product-price"&gt; $20.50 &lt;/span&gt; &lt;span class="price-percent-reduction"&gt;-20%&lt;/span&gt; <br/>
+             &lt;link itemprop="availability" href="http://schema.org/InStock"&gt;In stock <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="right-block"&gt; <br/>
+           &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.pl/index.php?id_product=7&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="Printed Chiffon Dress" itemprop="url"&gt; Printed Chiffon Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+           &lt;p class="product-desc" itemprop="description"&gt; Printed chiffon knee length dress with tank straps. Deep v-neckline. &lt;/p&gt; <br/>
+           &lt;div class="content_price"&gt; &lt;span class="price product-price"&gt; $16.40 &lt;/span&gt; &lt;span class="old-price product-price"&gt; $20.50 &lt;/span&gt; &lt;span class="price-percent-reduction"&gt;-20%&lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="button-container" style="display: none;"&gt; &lt;a class="button ajax_add_to_cart_button btn btn-default" href="http://automationpractice.pl/index.php?controller=cart&amp;add=1&amp;id_product=7&amp;token=8eb39ecde1064a454969d280a58bf6df" rel="nofollow" title="Add to cart" data-id-product="7" data-minimal_quantity="1"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/a&gt; &lt;a class="button lnk_view btn btn-default" href="http://automationpractice.pl/index.php?id_product=7&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="color-list-container"&gt;<br/>
+            &lt;ul class="color_to_pick_list clearfix"&gt; <br/>
+             &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=7&amp;controller=product#/size-s/color-green" id="color_37" class="color_pick" style="background:#A0D468;"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=7&amp;controller=product#/size-s/color-yellow" id="color_34" class="color_pick" style="background:#F1C40F;"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+            &lt;/ul&gt;<br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="product-flags"&gt; &lt;span class="discount"&gt;Reduced price!&lt;/span&gt; <br/>
+           &lt;/div&gt; &lt;span class="availability"&gt; &lt;span class="available-now"&gt; In stock &lt;/span&gt; &lt;/span&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="functional-buttons clearfix" style=""&gt; <br/>
+           &lt;div class="compare"&gt; &lt;a class="add_to_compare" href="http://automationpractice.pl/index.php?id_product=7&amp;controller=product&amp;search_query=Dresses&amp;results=7" data-id-product="7"&gt;Add to Compare&lt;/a&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+        &lt;li class="ajax_block_product col-xs-12 col-sm-6 col-md-4 last-in-line last-item-of-tablet-line last-item-of-mobile-line"&gt; <br/>
+         &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+          &lt;div class="left-block"&gt; <br/>
+           &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.pl/index.php?id_product=1&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="Faded Short Sleeve T-shirts" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.pl/img/p/1/1-home_default.jpg" alt="Faded Short Sleeve T-shirts" title="Faded Short Sleeve T-shirts" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+            &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.pl/index.php?id_product=1&amp;controller=product&amp;search_query=Dresses&amp;results=7" rel="http://automationpractice.pl/index.php?id_product=1&amp;controller=product&amp;search_query=Dresses&amp;results=7"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.pl/index.php?id_product=1&amp;controller=product&amp;search_query=Dresses&amp;results=7" rel="http://automationpractice.pl/index.php?id_product=1&amp;controller=product&amp;search_query=Dresses&amp;results=7"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $16.51 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+             &lt;link itemprop="availability" href="http://schema.org/LimitedAvailability"&gt;Product available with different options <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="right-block"&gt; <br/>
+           &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.pl/index.php?id_product=1&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="Faded Short Sleeve T-shirts" itemprop="url"&gt; Faded Short Sleeve T-shirts &lt;/a&gt; &lt;/h5&gt; <br/>
+           &lt;p class="product-desc" itemprop="description"&gt; Faded short sleeve t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready for summer! &lt;/p&gt; <br/>
+           &lt;div class="content_price"&gt; &lt;span class="price product-price"&gt; $16.51 &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="button-container" style="display: none;"&gt; &lt;span class="button ajax_add_to_cart_button btn btn-default disabled"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/span&gt; &lt;a class="button lnk_view btn btn-default" href="http://automationpractice.pl/index.php?id_product=1&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="color-list-container"&gt;<br/>
+            &lt;ul class="color_to_pick_list clearfix"&gt; <br/>
+             &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=1&amp;controller=product#/size-s/color-orange" id="color_1" class="color_pick" style="background:#F39C11;"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=1&amp;controller=product#/size-s/color-blue" id="color_2" class="color_pick" style="background:#5D9CEC;"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+            &lt;/ul&gt;<br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="product-flags"&gt; <br/>
+           &lt;/div&gt; &lt;span class="availability"&gt; &lt;span class="available-dif"&gt; Product available with different options &lt;/span&gt; &lt;/span&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="functional-buttons clearfix"&gt; <br/>
+           &lt;div class="compare"&gt; &lt;a class="add_to_compare" href="http://automationpractice.pl/index.php?id_product=1&amp;controller=product&amp;search_query=Dresses&amp;results=7" data-id-product="1"&gt;Add to Compare&lt;/a&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+        &lt;li class="ajax_block_product col-xs-12 col-sm-6 col-md-4 first-in-line last-line first-item-of-tablet-line first-item-of-mobile-line last-mobile-line"&gt; <br/>
+         &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+          &lt;div class="left-block"&gt; <br/>
+           &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.pl/index.php?id_product=2&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="Blouse" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.pl/img/p/7/7-home_default.jpg" alt="Blouse" title="Blouse" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+            &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.pl/index.php?id_product=2&amp;controller=product&amp;search_query=Dresses&amp;results=7" rel="http://automationpractice.pl/index.php?id_product=2&amp;controller=product&amp;search_query=Dresses&amp;results=7"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.pl/index.php?id_product=2&amp;controller=product&amp;search_query=Dresses&amp;results=7" rel="http://automationpractice.pl/index.php?id_product=2&amp;controller=product&amp;search_query=Dresses&amp;results=7"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $27.00 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+             &lt;link itemprop="availability" href="http://schema.org/LimitedAvailability"&gt;Product available with different options <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="right-block"&gt; <br/>
+           &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.pl/index.php?id_product=2&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="Blouse" itemprop="url"&gt; Blouse &lt;/a&gt; &lt;/h5&gt; <br/>
+           &lt;p class="product-desc" itemprop="description"&gt; Short sleeved blouse with feminine draped sleeve detail. &lt;/p&gt; <br/>
+           &lt;div class="content_price"&gt; &lt;span class="price product-price"&gt; $27.00 &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="button-container" style="display: none;"&gt; &lt;span class="button ajax_add_to_cart_button btn btn-default disabled"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/span&gt; &lt;a class="button lnk_view btn btn-default" href="http://automationpractice.pl/index.php?id_product=2&amp;controller=product&amp;search_query=Dresses&amp;results=7" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="color-list-container"&gt;<br/>
+            &lt;ul class="color_to_pick_list clearfix"&gt; <br/>
+             &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=2&amp;controller=product#/size-s/color-white" id="color_8" class="color_pick" style="background:#ffffff;"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_product=2&amp;controller=product#/size-s/color-black" id="color_7" class="color_pick" style="background:#434A54;"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+            &lt;/ul&gt;<br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="product-flags"&gt; <br/>
+           &lt;/div&gt; &lt;span class="availability"&gt; &lt;span class="available-dif"&gt; Product available with different options &lt;/span&gt; &lt;/span&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="functional-buttons clearfix"&gt; <br/>
+           &lt;div class="compare"&gt; &lt;a class="add_to_compare" href="http://automationpractice.pl/index.php?id_product=2&amp;controller=product&amp;search_query=Dresses&amp;results=7" data-id-product="2"&gt;Add to Compare&lt;/a&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+       &lt;/ul&gt; <br/>
+       &lt;div class="content_sortPagiBar"&gt; <br/>
+        &lt;div class="bottom-pagination-content clearfix"&gt; <br/>
+         &lt;form method="post" action="http://automationpractice.pl/index.php?controller=products-comparison" class="compare-form"&gt; &lt;button type="submit" class="btn btn-default button button-medium bt_compare bt_compare" disabled&gt; &lt;span&gt;Compare (&lt;strong class="total-compare-val"&gt;0&lt;/strong&gt;)&lt;i class="icon-chevron-right right"&gt;&lt;/i&gt;&lt;/span&gt; &lt;/button&gt; <br/>
+          &lt;input type="hidden" name="compare_product_count" class="compare_product_count" value="0"&gt; <br/>
+          &lt;input type="hidden" name="compare_product_list" class="compare_product_list" value=""&gt; <br/>
+         &lt;/form&gt; &lt;!-- Pagination --&gt; <br/>
+         &lt;div id="pagination_bottom" class="pagination clearfix"&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div class="product-count"&gt;<br/>
+           Showing 1 - 7 of 7 items <br/>
+         &lt;/div&gt; &lt;!-- /Pagination --&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt;&lt;!-- #center_column --&gt; <br/>
+     &lt;/div&gt;&lt;!-- .row --&gt; <br/>
+    &lt;/div&gt;&lt;!-- #columns --&gt; <br/>
+   &lt;/div&gt;&lt;!-- .columns-container --&gt; &lt;!-- Footer --&gt; <br/>
+   &lt;div class="footer-container"&gt; <br/>
+    &lt;footer id="footer" class="container"&gt; <br/>
+     &lt;div class="row"&gt;<br/>
+      &lt;!-- Block Newsletter module--&gt; <br/>
+      &lt;div id="newsletter_block_left" class="block"&gt; <br/>
+       &lt;h4&gt;Newsletter&lt;/h4&gt; <br/>
+       &lt;div class="block_content"&gt; <br/>
+        &lt;form action="//automationpractice.pl/index.php" method="post"&gt; <br/>
+         &lt;div class="form-group"&gt; <br/>
+          &lt;input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="Enter your e-mail"&gt; &lt;button type="submit" name="submitNewsletter" class="btn btn-default button button-small"&gt; &lt;span&gt;Ok&lt;/span&gt; &lt;/button&gt; <br/>
+          &lt;input type="hidden" name="action" value="0"&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/form&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; &lt;!-- /Block Newsletter module--&gt; <br/>
+      &lt;section id="social_block" class="pull-right"&gt; <br/>
+       &lt;ul&gt; <br/>
+        &lt;li class="facebook"&gt; &lt;a class="_blank" href="http://www.facebook.com/prestashop" target="_blank"&gt; &lt;span&gt;Facebook&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="twitter"&gt; &lt;a class="_blank" href="http://www.twitter.com/prestashop" target="_blank"&gt; &lt;span&gt;Twitter&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="rss"&gt; &lt;a class="_blank" href="http://www.prestashop.com/blog/en/feed/" target="_blank"&gt; &lt;span&gt;RSS&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+       &lt;/ul&gt; <br/>
+       &lt;h4&gt;Follow us&lt;/h4&gt; <br/>
+      &lt;/section&gt; <br/>
+      &lt;div class="clearfix"&gt;&lt;/div&gt; &lt;!-- Block categories module --&gt; <br/>
+      &lt;section class="blockcategories_footer footer-block col-xs-12 col-sm-2"&gt; <br/>
+       &lt;h4&gt;Categories&lt;/h4&gt; <br/>
+       &lt;div class="category_footer toggle-footer" style=""&gt; <br/>
+        &lt;div class="list"&gt; <br/>
+         &lt;ul class="tree dynamized" style="display: block;"&gt; <br/>
+          &lt;li&gt; &lt;span class="grower CLOSE"&gt; &lt;/span&gt;&lt;a href="http://automationpractice.pl/index.php?id_category=3&amp;controller=category" title="You will find here all woman fashion collections.  <br/>
+ This category includes all the basics of your wardrobe and much more: <br/>
+ shoes, accessories, printed t-shirts, feminine dresses, women's jeans!"&gt; Women &lt;/a&gt; <br/>
+           &lt;ul style="display: none;"&gt; <br/>
+            &lt;li&gt; &lt;span class="grower CLOSE"&gt; &lt;/span&gt;&lt;a href="http://automationpractice.pl/index.php?id_category=4&amp;controller=category" title="Choose from t-shirts, tops, blouses, short sleeves, long sleeves, tank tops, 3/4 sleeves and more. <br/>
+ Find the cut that suits you the best!"&gt; Tops &lt;/a&gt; <br/>
+             &lt;ul style="display: none;"&gt; <br/>
+              &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_category=5&amp;controller=category" title="The must have of your wardrobe, take a look at our different colors, <br/>
+ shapes and style of our collection!"&gt; T-shirts &lt;/a&gt; &lt;/li&gt; <br/>
+              &lt;li class="last"&gt; &lt;a href="http://automationpractice.pl/index.php?id_category=7&amp;controller=category" title="Match your favorites blouses with the right accessories for the perfect look."&gt; Blouses &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;/ul&gt; &lt;/li&gt; <br/>
+            &lt;li class="last"&gt; &lt;span class="grower CLOSE"&gt; &lt;/span&gt;&lt;a href="http://automationpractice.pl/index.php?id_category=8&amp;controller=category" title="Find your favorites dresses from our wide choice of evening, casual or summer dresses! <br/>
+ We offer dresses for every day, every style and every occasion."&gt; Dresses &lt;/a&gt; <br/>
+             &lt;ul style="display: none;"&gt; <br/>
+              &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_category=9&amp;controller=category" title="You are looking for a dress for every day? Take a look at <br/>
+ our selection of dresses to find one that suits you."&gt; Casual Dresses &lt;/a&gt; &lt;/li&gt; <br/>
+              &lt;li&gt; &lt;a href="http://automationpractice.pl/index.php?id_category=10&amp;controller=category" title="Browse our different dresses to choose the perfect dress for an unforgettable evening!"&gt; Evening Dresses &lt;/a&gt; &lt;/li&gt; <br/>
+              &lt;li class="last"&gt; &lt;a href="http://automationpractice.pl/index.php?id_category=11&amp;controller=category" title="Short dress, long dress, silk dress, printed dress, you will find the perfect dress for summer."&gt; Summer Dresses &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;/ul&gt; &lt;/li&gt; <br/>
+           &lt;/ul&gt; &lt;/li&gt; <br/>
+          &lt;li class="last"&gt; &lt;a href="http://automationpractice.pl/index.php?id_category=12&amp;controller=category" title=""&gt; Home &lt;/a&gt; &lt;/li&gt; <br/>
+         &lt;/ul&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; &lt;!-- .category_footer --&gt; <br/>
+      &lt;/section&gt; &lt;!-- /Block categories module --&gt; &lt;!-- MODULE Block footer --&gt; <br/>
+      &lt;section class="footer-block col-xs-12 col-sm-2" id="block_various_links_footer"&gt; <br/>
+       &lt;h4&gt;Information&lt;/h4&gt; <br/>
+       &lt;ul class="toggle-footer" style=""&gt; <br/>
+        &lt;li class="item"&gt; &lt;a href="http://automationpractice.pl/index.php?controller=stores" title="Our stores"&gt; Our stores &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="item"&gt; &lt;a href="http://automationpractice.pl/index.php?id_cms=3&amp;controller=cms" title="Terms and conditions of use"&gt; Terms and conditions of use &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="item"&gt; &lt;a href="http://automationpractice.pl/index.php?id_cms=4&amp;controller=cms" title="About us"&gt; About us &lt;/a&gt; &lt;/li&gt; <br/>
+       &lt;/ul&gt; <br/>
+      &lt;/section&gt; <br/>
+      &lt;section class="bottom-footer col-xs-12"&gt; <br/>
+       &lt;div&gt;<br/>
+         © 2014 &lt;a class="_blank" href="http://www.prestashop.com" target="_blank"&gt;Ecommerce software by PrestaShop™&lt;/a&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/section&gt; &lt;!-- /MODULE Block footer --&gt; &lt;!-- Block myaccount module --&gt; <br/>
+      &lt;section class="footer-block col-xs-12 col-sm-4"&gt; <br/>
+       &lt;h4&gt;&lt;a href="http://automationpractice.pl/index.php?controller=my-account" title="Manage my customer account" rel="nofollow"&gt;My account&lt;/a&gt;&lt;/h4&gt; <br/>
+       &lt;div class="block_content toggle-footer" style=""&gt; <br/>
+        &lt;ul class="bullet"&gt; <br/>
+         &lt;li&gt;&lt;a href="http://automationpractice.pl/index.php?controller=history" title="My orders" rel="nofollow"&gt;My orders&lt;/a&gt;&lt;/li&gt; <br/>
+         &lt;li&gt;&lt;a href="http://automationpractice.pl/index.php?controller=order-slip" title="My credit slips" rel="nofollow"&gt;My credit slips&lt;/a&gt;&lt;/li&gt; <br/>
+         &lt;li&gt;&lt;a href="http://automationpractice.pl/index.php?controller=addresses" title="My addresses" rel="nofollow"&gt;My addresses&lt;/a&gt;&lt;/li&gt; <br/>
+         &lt;li&gt;&lt;a href="http://automationpractice.pl/index.php?controller=identity" title="Manage my personal information" rel="nofollow"&gt;My personal info&lt;/a&gt;&lt;/li&gt; <br/>
+        &lt;/ul&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/section&gt; &lt;!-- /Block myaccount module --&gt; &lt;!-- MODULE Block contact infos --&gt; <br/>
+      &lt;section id="block_contact_infos" class="footer-block col-xs-12 col-sm-4"&gt; <br/>
+       &lt;div&gt; <br/>
+        &lt;h4&gt;Store Information&lt;/h4&gt; <br/>
+        &lt;ul class="toggle-footer" style=""&gt; <br/>
+         &lt;li&gt; &lt;i class="icon-map-marker"&gt;&lt;/i&gt;My Company, 42 avenue des Champs Elysées 75000 Paris France &lt;/li&gt; <br/>
+         &lt;li&gt; &lt;i class="icon-phone"&gt;&lt;/i&gt;Call us now: &lt;span&gt;0123-456-789&lt;/span&gt; &lt;/li&gt; <br/>
+         &lt;li&gt; &lt;i class="icon-envelope-alt"&gt;&lt;/i&gt;Email: &lt;span&gt;&lt;a href="mailto:%73%61%6c%65%73@%79%6f%75%72%63%6f%6d%70%61%6e%79.%63%6f%6d"&gt;sales@yourcompany.com&lt;/a&gt;&lt;/span&gt; &lt;/li&gt; <br/>
+        &lt;/ul&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/section&gt; &lt;!-- /MODULE Block contact infos --&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/footer&gt; <br/>
+   &lt;/div&gt;&lt;!-- #footer --&gt; <br/>
+  &lt;/div&gt;&lt;!-- #page --&gt; <br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
