@@ -1,33 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Adición de productos al carrito - Búsqueda y selección de productos" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-04-21T22:17:13" hostname="MPC-KPB0" time="0.824">
+<testsuite name="Adición de productos al carrito - Búsqueda y selección de productos" tests="6" skipped="0" failures="1" errors="0" timestamp="2023-04-27T02:36:17" hostname="LAPTOP-ULNTMJGI" time="78.017">
   <properties/>
-  <testcase name="Buscar y agregar un producto al carrito" classname="Adición de productos al carrito - Búsqueda y selección de productos" time="0.824">
-    <failure message="io.cucumber.junit.UndefinedStepException: The step 'que estoy en la página &quot;http://automationpractice.pl/index.php&quot;' and 3 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;que estoy en la página {string}&quot;)&#10;public void queEstoyEnLaPágina(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;busco el producto {string}&quot;)&#10;public void buscoElProducto(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;hago clic en el botón {string}&quot;)&#10;public void hagoClicEnElBotón(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;debería ver un mensaje de confirmación que indica que el producto se agregó correctamente al carrito&quot;)&#10;public void deberíaVerUnMensajeDeConfirmaciónQueIndicaQueElProductoSeAgregóCorrectamenteAlCarrito() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'que estoy en la página &quot;http://automationpractice.pl/index.php&quot;' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;que estoy en la página {string}&quot;)
-public void queEstoyEnLaPágina(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;busco el producto {string}&quot;)
-public void buscoElProducto(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;hago clic en el botón {string}&quot;)
-public void hagoClicEnElBotón(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;debería ver un mensaje de confirmación que indica que el producto se agregó correctamente al carrito&quot;)
-public void deberíaVerUnMensajeDeConfirmaciónQueIndicaQueElProductoSeAgregóCorrectamenteAlCarrito() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
+  <testcase name="Buscar y agregar un producto al carrito desde la vista rapida" classname="Adición de productos al carrito - Búsqueda y selección de productos" time="20.644"/>
+  <testcase name="Buscar y agregar múltiples productos al carrito desde la vista rapida" classname="Adición de productos al carrito - Búsqueda y selección de productos" time="10.556"/>
+  <testcase name="Agregar un producto al carrito seleccionando la cantidad desde la vista del producto" classname="Adición de productos al carrito - Búsqueda y selección de productos" time="7.185"/>
+  <testcase name="Agregar un producto al carrito seleccionando la talla desde la vista del producto" classname="Adición de productos al carrito - Búsqueda y selección de productos" time="7.699"/>
+  <testcase name="Agregar un producto al carrito seleccionando el color desde la vista del producto" classname="Adición de productos al carrito - Búsqueda y selección de productos" time="6.946"/>
+  <testcase name="Agregar un producto al carrito eliminarlo del carrito y volverlo anadir" classname="Adición de productos al carrito - Búsqueda y selección de productos" time="24.987">
+    <failure message="java.lang.AssertionError: &#13;&#10;Expected: an element containing '1'&#13;&#10;     but:  was the element identified by [[ChromeDriver: chrome on WINDOWS (cf4bba74620236bb5a3e9963805a5e00)] -&gt; xpath: //header/div[3]/div[1]/div[1]/div[3]/div[1]/a[1]/span[1]] [0]" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: an element containing '1'
+     but:  was the element identified by [[ChromeDriver: chrome on WINDOWS (cf4bba74620236bb5a3e9963805a5e00)] -&gt; xpath: //header/div[3]/div[1]/div[1]/div[3]/div[1]/a[1]/span[1]] [0]
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:353)
+	at co.com.proyectobase.screenplay.stepdefinitions.EscenarioSeisStepDefinition.deberiaVerQueElCarritoContengaElProducto(EscenarioSeisStepDefinition.java:55)
+	at ✽.deberia ver que el carrito contenga el producto(file:///C:/Users/crist/Desktop/PROYECTOS%20ACADEMICOS%20PROGRAMACION/ARQUETIPO_SCREENPLAY/ScreenPlay_Patron/src/test/resources/features/agregarProductoVistaRapida.feature:43)
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 56245
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+abr. 26, 2023 9:36:20 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+abr. 26, 2023 9:36:21 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: a no-op implementation
+abr. 26, 2023 9:36:21 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 112.
+abr. 26, 2023 9:36:21 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.3.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 53049
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+abr. 26, 2023 9:36:39 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+abr. 26, 2023 9:36:39 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: a no-op implementation
+abr. 26, 2023 9:36:39 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 112.
+abr. 26, 2023 9:36:39 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.3.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 61687
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+abr. 26, 2023 9:36:49 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+abr. 26, 2023 9:36:49 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: a no-op implementation
+abr. 26, 2023 9:36:49 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 112.
+abr. 26, 2023 9:36:49 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.3.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 49409
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+abr. 26, 2023 9:36:56 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+abr. 26, 2023 9:36:56 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: a no-op implementation
+abr. 26, 2023 9:36:56 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 112.
+abr. 26, 2023 9:36:56 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.3.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 53214
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+abr. 26, 2023 9:37:04 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+abr. 26, 2023 9:37:04 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: a no-op implementation
+abr. 26, 2023 9:37:04 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 112.
+abr. 26, 2023 9:37:04 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.3.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 50718
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+abr. 26, 2023 9:37:11 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+abr. 26, 2023 9:37:11 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: a no-op implementation
+abr. 26, 2023 9:37:11 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 112.
+abr. 26, 2023 9:37:11 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.3.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
 </testsuite>
