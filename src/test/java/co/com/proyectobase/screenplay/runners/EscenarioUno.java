@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features="src/test/resources/features/agregarProductoVistaRapida.feature",
         glue={"co.com.proyectobase.screenplay.stepdefinitions","co.com.proyectobase.screenplay.hooks"},
-        //tags = "@TestCaseOne or @TestCaseTwo",
+        tags = "@TestCaseOne or @TestCaseThree",
         snippets= CucumberOptions.SnippetType.CAMELCASE
 )
 public class EscenarioUno {

@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Adición de productos al carrito - Búsqueda y selección de productos" skipped="1" tests="2" time="25.57" timestamp="2023-04-22 12:03:42"><testcase name="Buscar y agregar un producto al carrito"/><testcase name="Buscar y agregar múltiples productos al carrito"><skipped/></testcase></testsuite>
